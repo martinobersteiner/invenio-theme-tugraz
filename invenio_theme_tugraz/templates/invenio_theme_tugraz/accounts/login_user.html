@@ -37,7 +37,7 @@
           {% if config.SSO_SAML_IDPS %}
             {% for name in config.SSO_SAML_IDPS.keys() %}
               <div class="field">
-                <a class="login-page-button ui fluid large button" href="{{ url_for('sso_saml.sso', idp=name, next=next_url) }}">
+                <a class="login-page-button ui fluid large button" href="/">
                   {{
                     _('Log in with %(title)s', title=config.SSO_SAML_IDPS[name]['title']|default("SAML", true))
                   }}
